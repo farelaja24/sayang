@@ -1,0 +1,1715 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our 20-Month Love Story 💕</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Material Symbols -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#78555e",
+              "primary-dark": "#5c3f47",
+              "primary-light": "#a07880",
+              "primary-container": "#ffd1dc",
+              "primary-container-dark": "#f5b8c8",
+              surface: "#faf9f6",
+              "on-surface": "#2c2224",
+              "on-surface-variant": "#4f4446",
+              "surface-variant": "#f2e8ea",
+              outline: "#c9b2b6",
+              sparkle: "#f5c518",
+            },
+            fontFamily: {
+              headline: ['"Plus Jakarta Sans"', "sans-serif"],
+              body: ["Quicksand", "sans-serif"],
+              handwritten: ['"Dancing Script"', "cursive"],
+            },
+            borderRadius: {
+              xl: "1rem",
+              "2xl": "2rem",
+              "3xl": "3rem",
+            },
+            boxShadow: {
+              polaroid:
+                "0 10px 30px -5px rgba(120,85,94,0.2), 0 2px 8px rgba(120,85,94,0.1)",
+              "polaroid-hover":
+                "0 20px 40px -5px rgba(120,85,94,0.3), 0 4px 16px rgba(120,85,94,0.15)",
+              glass:
+                "0 8px 32px rgba(120,85,94,0.12), inset 0 1px 0 rgba(255,255,255,0.6)",
+              card: "0 4px 20px rgba(120,85,94,0.1)",
+              "card-hover": "0 8px 30px rgba(120,85,94,0.18)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      /* ── Base ── */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background-color: #faf9f6;
+        color: #2c2224;
+        font-family: "Quicksand", sans-serif;
+        overflow-x: hidden;
+      }
+
+      /* ── Material Symbols ── */
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 1,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+        vertical-align: middle;
+        user-select: none;
+      }
+
+      /* ── Scrollbar ── */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #faf9f6;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #ffd1dc;
+        border-radius: 99px;
+      }
+
+      /* ── Sticky Navbar ── */
+      #navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background: rgba(250, 249, 246, 0.8);
+        border-bottom: 1px solid rgba(255, 209, 220, 0.4);
+        transition: box-shadow 0.3s;
+      }
+      #navbar.scrolled {
+        box-shadow: 0 2px 20px rgba(120, 85, 94, 0.1);
+      }
+
+      /* ── Polaroid ── */
+      .polaroid {
+        background: white;
+        padding: 12px 12px 40px;
+        box-shadow: var(--tw-shadow, 0 10px 30px -5px rgba(120, 85, 94, 0.2));
+        transition:
+          transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+          box-shadow 0.35s ease;
+        position: relative;
+      }
+      .polaroid:hover {
+        box-shadow: 0 20px 40px -5px rgba(120, 85, 94, 0.3);
+      }
+      .polaroid .caption {
+        font-family: "Dancing Script", cursive;
+        font-size: 1.1rem;
+        color: #78555e;
+        text-align: center;
+        margin-top: 8px;
+        line-height: 1.2;
+      }
+
+      /* ── Washi Tape ── */
+      .washi {
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%) rotate(-2deg);
+        width: 70px;
+        height: 22px;
+        border-radius: 2px;
+        opacity: 0.75;
+        z-index: 2;
+      }
+
+      /* ── Glass Panel ── */
+      .glass {
+        background: rgba(255, 255, 255, 0.55);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 209, 220, 0.5);
+        box-shadow: 0 8px 32px rgba(120, 85, 94, 0.08);
+      }
+
+      /* ── Music Bars ── */
+      .music-bar {
+        display: flex;
+        align-items: flex-end;
+        gap: 3px;
+        height: 20px;
+      }
+      .music-bar span {
+        display: inline-block;
+        width: 4px;
+        background: #78555e;
+        border-radius: 2px;
+        animation: musicPulse 0.8s ease-in-out infinite;
+      }
+      .music-bar span:nth-child(1) {
+        animation-delay: 0s;
+        height: 8px;
+      }
+      .music-bar span:nth-child(2) {
+        animation-delay: 0.15s;
+        height: 14px;
+      }
+      .music-bar span:nth-child(3) {
+        animation-delay: 0.3s;
+        height: 10px;
+      }
+      .music-bar span:nth-child(4) {
+        animation-delay: 0.45s;
+        height: 18px;
+      }
+      .music-bar span:nth-child(5) {
+        animation-delay: 0.6s;
+        height: 12px;
+      }
+
+      @keyframes musicPulse {
+        0%,
+        100% {
+          transform: scaleY(1);
+        }
+        50% {
+          transform: scaleY(0.35);
+        }
+      }
+      .music-bar.paused span {
+        animation-play-state: paused;
+      }
+
+      /* ── Floating Hearts ── */
+      #hearts-container {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 1;
+        overflow: hidden;
+      }
+      .heart-float {
+        position: absolute;
+        bottom: -60px;
+        color: #ffd1dc;
+        animation: floatUp linear forwards;
+        font-size: 1.4rem;
+        pointer-events: none;
+      }
+      @keyframes floatUp {
+        0% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        80% {
+          opacity: 0.8;
+        }
+        100% {
+          transform: translateY(-110vh) rotate(30deg);
+          opacity: 0;
+        }
+      }
+
+      /* ── Reveal on Scroll ── */
+      .reveal {
+        opacity: 0;
+        transform: translateY(36px);
+        transition:
+          opacity 0.7s ease,
+          transform 0.7s ease;
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* ── Button Squishy ── */
+      .btn-squishy {
+        transition:
+          transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1),
+          box-shadow 0.18s ease;
+      }
+      .btn-squishy:hover {
+        transform: scale(1.05);
+      }
+      .btn-squishy:active {
+        transform: scale(0.95);
+      }
+
+      /* ── Floating Love Note ── */
+      #love-note-widget {
+        position: fixed;
+        bottom: 88px;
+        right: 20px;
+        z-index: 90;
+      }
+      @media (min-width: 768px) {
+        #love-note-widget {
+          bottom: 28px;
+          right: 28px;
+        }
+      }
+      .love-note-btn {
+        animation: bounce 2.2s ease-in-out infinite;
+      }
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-8px);
+        }
+      }
+
+      /* ── Sparkle cursor on letter ── */
+      .sparkle-dot {
+        position: fixed;
+        pointer-events: none;
+        z-index: 999;
+        font-size: 1rem;
+        animation: sparkleFade 0.8s ease forwards;
+      }
+      @keyframes sparkleFade {
+        0% {
+          transform: scale(0) rotate(0deg);
+          opacity: 1;
+        }
+        60% {
+          transform: scale(1.4) rotate(20deg);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(0.6) rotate(-10deg) translateY(-20px);
+          opacity: 0;
+        }
+      }
+
+      /* ── Timeline ── */
+      .timeline-line {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: repeating-linear-gradient(
+          to bottom,
+          #ffd1dc 0,
+          #ffd1dc 6px,
+          transparent 6px,
+          transparent 14px
+        );
+        transform: translateX(-50%);
+      }
+
+      /* ── Scrapbook BG ── */
+      #scrapbook {
+        background:
+          radial-gradient(
+            ellipse at 20% 40%,
+            rgba(255, 209, 220, 0.25) 0%,
+            transparent 60%
+          ),
+          radial-gradient(
+            ellipse at 80% 70%,
+            rgba(245, 200, 215, 0.2) 0%,
+            transparent 50%
+          ),
+          linear-gradient(135deg, #fdf6f0 0%, #faf2f5 50%, #fff0f5 100%);
+        background-attachment: fixed;
+      }
+
+      /* ── Dot BG ── */
+      .dot-bg {
+        background-image: radial-gradient(#e1b8bf 1px, transparent 1px);
+        background-size: 24px 24px;
+      }
+
+      /* ── Sparkle icon in timeline ── */
+      @keyframes sparkleRotate {
+        0%,
+        100% {
+          transform: rotate(0deg) scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: rotate(15deg) scale(1.3);
+          opacity: 0.7;
+        }
+      }
+      .sparkle-icon {
+        animation: sparkleRotate 2s ease-in-out infinite;
+        color: #f5c518;
+      }
+
+      /* ── Mobile bottom navbar ── */
+      #bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background: rgba(250, 249, 246, 0.92);
+        border-top: 1px solid rgba(255, 209, 220, 0.45);
+      }
+
+      /* ── Active nav link ── */
+      .nav-link.active,
+      .bottom-tab.active {
+        color: #78555e;
+        font-weight: 700;
+      }
+
+      /* ── Floating decor ── */
+      .float-decor {
+        position: absolute;
+        pointer-events: none;
+        opacity: 0.12;
+        font-size: 5rem;
+        color: #78555e;
+        user-select: none;
+      }
+
+      /* ── Letter dot texture ── */
+      .letter-card {
+        background-image: radial-gradient(
+          rgba(120, 85, 94, 0.06) 1px,
+          transparent 1px
+        );
+        background-size: 18px 18px;
+      }
+
+      /* ── Note popup ── */
+      #love-note-popup {
+        transform-origin: bottom right;
+        transition:
+          transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+          opacity 0.25s ease;
+        transform: scale(0);
+        opacity: 0;
+      }
+      #love-note-popup.open {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      /* ── Countdown card ── */
+      .countdown-card {
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 209, 220, 0.55);
+        border-radius: 1rem;
+      }
+
+      /* reduce motion */
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="font-body text-on-surface">
+    <!-- ===== FLOATING HEARTS ===== -->
+    <div id="hearts-container" aria-hidden="true"></div>
+
+    <!-- ===== DESKTOP NAVBAR ===== -->
+    <nav id="navbar" class="hidden md:block px-8 py-3">
+      <div class="max-w-5xl mx-auto flex items-center justify-between">
+        <a
+          href="#home"
+          class="font-headline font-bold text-lg text-primary flex items-center gap-2"
+        >
+          <span class="material-symbols-outlined text-xl">favorite</span>
+          Our Love Story
+        </a>
+        <div class="flex items-center gap-8">
+          <a
+            href="#home"
+            class="nav-link text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors"
+            data-section="home"
+            >Home</a
+          >
+          <a
+            href="#timeline"
+            class="nav-link text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors"
+            data-section="timeline"
+            >Story</a
+          >
+          <a
+            href="#letter"
+            class="nav-link text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors"
+            data-section="letter"
+            >Letter</a
+          >
+          <a
+            href="#scrapbook"
+            class="nav-link text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors"
+            data-section="scrapbook"
+            >Gallery</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== SECTION 1: HOME ===== -->
+    <section
+      id="home"
+      class="min-h-screen pt-24 md:pt-28 pb-24 md:pb-16 px-4 flex flex-col items-center justify-center relative overflow-hidden"
+    >
+      <!-- Soft bg blobs -->
+      <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div
+          class="absolute -top-20 -left-20 w-80 h-80 rounded-full bg-primary-container opacity-30 blur-3xl"
+        ></div>
+        <div
+          class="absolute top-1/3 -right-20 w-96 h-96 rounded-full bg-pink-100 opacity-30 blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-0 left-1/4 w-64 h-64 rounded-full bg-primary-container opacity-20 blur-3xl"
+        ></div>
+      </div>
+
+      <div class="max-w-4xl w-full mx-auto relative z-10">
+        <!-- Hero Polaroid -->
+        <div class="flex justify-center mb-8 reveal">
+          <div
+            class="polaroid -rotate-1 hover:rotate-0 hover:scale-105 cursor-pointer w-56 md:w-72 transition-all duration-500"
+            style="box-shadow: 0 10px 30px -5px rgba(120, 85, 94, 0.25)"
+          >
+            <!-- Kawaii couple illustration placeholder -->
+            <div
+              class="w-full aspect-square rounded-sm overflow-hidden relative"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  #ffd1dc 0%,
+                  #f5b8c8 40%,
+                  #e8a4b8 70%,
+                  #d990a8 100%
+                );
+              "
+            >
+              <!-- Diganti: gunakan gambar eksternal dari assets/images -->
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                <!-- Background hearts -->
+                <text x="20" y="40" font-size="14" fill="rgba(255,255,255,0.4)">
+                  ♥
+                </text>
+                <text
+                  x="150"
+                  y="30"
+                  font-size="10"
+                  fill="rgba(255,255,255,0.4)"
+                >
+                  ♥
+                </text>
+                <text x="170" y="80" font-size="8" fill="rgba(255,255,255,0.3)">
+                  ♥
+                </text>
+                <text
+                  x="10"
+                  y="150"
+                  font-size="10"
+                  fill="rgba(255,255,255,0.3)"
+                >
+                  ♥
+                </text>
+                <!-- Girl body -->
+                <ellipse cx="85" cy="160" rx="25" ry="30" fill="#f8c8d4" />
+                <!-- Girl dress detail -->
+                <ellipse cx="85" cy="168" rx="28" ry="26" fill="#e891b0" />
+                <!-- Girl head -->
+                <circle cx="85" cy="105" r="24" fill="#fdebd0" />
+                <!-- Girl hair -->
+                <ellipse cx="85" cy="92" rx="24" ry="14" fill="#5c3f2a" />
+                <ellipse cx="68" cy="107" rx="7" ry="18" fill="#5c3f2a" />
+                <ellipse cx="102" cy="107" rx="7" ry="18" fill="#5c3f2a" />
+                <!-- Girl face -->
+                <circle cx="78" cy="108" r="3" fill="#3d2a1e" />
+                <circle cx="92" cy="108" r="3" fill="#3d2a1e" />
+                <ellipse cx="85" cy="115" rx="5" ry="3" fill="#e87da0" />
+                <!-- Blush -->
+                <ellipse
+                  cx="73"
+                  cy="113"
+                  rx="5"
+                  ry="3"
+                  fill="#ffb6c1"
+                  opacity="0.6"
+                />
+                <ellipse
+                  cx="97"
+                  cy="113"
+                  rx="5"
+                  ry="3"
+                  fill="#ffb6c1"
+                  opacity="0.6"
+                />
+                <!-- Boy body -->
+                <ellipse cx="125" cy="160" rx="25" ry="30" fill="#b8d4f0" />
+                <ellipse cx="125" cy="168" rx="28" ry="26" fill="#7aa8d4" />
+                <!-- Boy head -->
+                <circle cx="125" cy="105" r="24" fill="#fdebd0" />
+                <!-- Boy hair -->
+                <ellipse cx="125" cy="90" rx="24" ry="10" fill="#3d2a1e" />
+                <!-- Boy face -->
+                <circle cx="118" cy="108" r="3" fill="#3d2a1e" />
+                <circle cx="132" cy="108" r="3" fill="#3d2a1e" />
+                <!-- Smile -->
+                <path
+                  d="M120 115 Q125 120 130 115"
+                  stroke="#c87890"
+                  stroke-width="1.5"
+                  fill="none"
+                  stroke-linecap="round"
+                />
+                <!-- Blush boy -->
+                <ellipse
+                  cx="113"
+                  cy="113"
+                  rx="5"
+                  ry="3"
+                  fill="#ffb6c1"
+                  opacity="0.5"
+                />
+                <ellipse
+                  cx="137"
+                  cy="113"
+                  rx="5"
+                  ry="3"
+                  fill="#ffb6c1"
+                  opacity="0.5"
+                />
+                <!-- Holding hands -->
+                <ellipse cx="107" cy="148" rx="8" ry="6" fill="#fcd5b0" />
+                <!-- Big heart above -->
+                <text x="90" y="78" font-size="22" fill="#e87da0">♥</text>
+                <!-- Sparkles -->
+                <text x="140" y="90" font-size="12" fill="#f5c518">✦</text>
+                <text x="55" y="80" font-size="10" fill="#f5c518">✦</text>
+                <text
+                  x="160"
+                  y="140"
+                  font-size="8"
+                  fill="rgba(255,255,255,0.6)"
+                >
+                  ✦
+                </text>
+                <image href="assets/images/WhatsApp Image 2026-06-16 at 21.58.18.jpeg" x="0" y="0" width="200" height="200" preserveAspectRatio="xMidYMid slice" />
+              </svg>
+            </div>
+            <p class="caption">Us, always 💕</p>
+          </div>
+        </div>
+
+        <!-- Headline -->
+        <div class="text-center mb-8 reveal" style="transition-delay: 0.1s">
+          <p
+            class="font-headline text-sm font-semibold tracking-widest text-primary-light uppercase mb-2"
+          >
+            ✨ 17 Oktober 2024 — Sekarang ✨
+          </p>
+          <h1
+            class="font-headline font-extrabold text-4xl md:text-6xl text-primary leading-tight mb-3"
+          >
+            Happy 1 Year<br class="md:hidden" /><span
+              class="text-primary-light"
+            >
+              8 Months!</span
+            >
+          </h1>
+          <p
+            class="font-body text-on-surface-variant text-lg md:text-xl max-w-lg mx-auto leading-relaxed"
+          >
+            Every moment with you is a page in our favorite love story — and
+            we're still just getting started. 🌸
+          </p>
+        </div>
+
+        <!-- Countdown Timer -->
+        <div class="reveal mb-8" style="transition-delay: 0.2s">
+          <p class="text-center font-handwritten text-primary text-xl mb-4">
+            Together for...
+          </p>
+          <div class="grid grid-cols-4 gap-3 max-w-md mx-auto">
+            <div class="countdown-card p-3 md:p-4 text-center">
+              <span
+                id="cd-days"
+                class="font-headline font-bold text-2xl md:text-3xl text-primary block"
+                >0</span
+              >
+              <span
+                class="font-body text-xs text-on-surface-variant font-semibold uppercase tracking-wide"
+                >Days</span
+              >
+            </div>
+            <div class="countdown-card p-3 md:p-4 text-center">
+              <span
+                id="cd-hours"
+                class="font-headline font-bold text-2xl md:text-3xl text-primary block"
+                >0</span
+              >
+              <span
+                class="font-body text-xs text-on-surface-variant font-semibold uppercase tracking-wide"
+                >Hours</span
+              >
+            </div>
+            <div class="countdown-card p-3 md:p-4 text-center">
+              <span
+                id="cd-mins"
+                class="font-headline font-bold text-2xl md:text-3xl text-primary block"
+                >0</span
+              >
+              <span
+                class="font-body text-xs text-on-surface-variant font-semibold uppercase tracking-wide"
+                >Mins</span
+              >
+            </div>
+            <div class="countdown-card p-3 md:p-4 text-center">
+              <span
+                id="cd-secs"
+                class="font-headline font-bold text-2xl md:text-3xl text-primary block"
+                >0</span
+              >
+              <span
+                class="font-body text-xs text-on-surface-variant font-semibold uppercase tracking-wide"
+                >Secs</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Bento cards -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto reveal"
+          style="transition-delay: 0.3s"
+        >
+          <!-- Next Stop card -->
+          <div
+            class="glass rounded-2xl p-5 flex items-center gap-4 btn-squishy cursor-default"
+          >
+            <div
+              class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center shrink-0"
+            >
+              <span class="material-symbols-outlined text-primary text-2xl"
+                >favorite</span
+              >
+            </div>
+            <div>
+              <p class="font-headline font-bold text-primary text-base">
+                Next Stop: Forever
+              </p>
+              <p class="font-body text-on-surface-variant text-sm">
+                Every day with you is a gift I never want to return. 💌
+              </p>
+            </div>
+          </div>
+
+          <!-- Our Song card -->
+          <div
+            class="glass rounded-2xl p-5 flex items-center gap-4 btn-squishy cursor-default"
+          >
+            <div
+              class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center shrink-0"
+            >
+              <span class="material-symbols-outlined text-primary text-2xl"
+                >music_note</span
+              >
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="font-headline font-bold text-primary text-base">
+                Our Song
+              </p>
+              <p
+                class="font-body text-on-surface-variant text-xs mb-2 truncate"
+              >
+                About You — The 1975 
+              </p>
+              <div class="music-bar" id="hero-music-bar">
+                <span></span><span></span><span></span><span></span
+                ><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center mt-8 reveal" style="transition-delay: 0.4s">
+          <a
+            href="#timeline"
+            class="btn-squishy inline-flex items-center gap-2 bg-primary text-white font-headline font-semibold px-7 py-3 rounded-full shadow-card hover:bg-primary-dark transition-colors"
+          >
+            <span class="material-symbols-outlined text-xl">auto_stories</span>
+            Read Our Story
+          </a>
+        </div>
+      </div>
+      <!-- /max-w-4xl -->
+    </section>
+
+    <!-- ===== SECTION 2: TIMELINE ===== -->
+    <section id="timeline" class="min-h-screen py-20 px-4 relative dot-bg">
+      <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div class="float-decor top-20 right-8">
+          <span class="material-symbols-outlined" style="font-size: 5rem"
+            >local_florist</span
+          >
+        </div>
+        <div class="float-decor bottom-32 left-4">
+          <span class="material-symbols-outlined" style="font-size: 4rem"
+            >eco</span
+          >
+        </div>
+      </div>
+
+      <div class="max-w-4xl mx-auto relative">
+        <!-- Header -->
+        <div class="text-center mb-16 reveal">
+          <p class="font-handwritten text-primary-light text-2xl mb-1">
+            Chapter Two
+          </p>
+          <h2
+            class="font-headline font-extrabold text-4xl md:text-5xl text-primary mb-3"
+          >
+            Our Timeline
+          </h2>
+          <p class="font-body text-on-surface-variant text-lg">
+            <span id="days-counter" class="font-bold text-primary">608</span>
+            beautiful days and counting
+          </p>
+        </div>
+
+        <!-- Timeline -->
+        <div class="relative pb-12">
+          <!-- vertical line -->
+          <div class="timeline-line hidden md:block"></div>
+
+          <!-- Milestone 1 -->
+          <div class="mb-16 md:flex md:justify-end md:pr-16 reveal">
+            <div class="md:w-80">
+              <div
+                class="polaroid hover:scale-105 hover:rotate-0 -rotate-1 transition-all duration-400 cursor-default"
+                style="background: linear-gradient(135deg, #fff5f8, #ffe8ef)"
+              >
+                <div
+                  class="washi"
+                  style="background: rgba(255, 209, 220, 0.85)"
+                ></div>
+                <div
+                  class="w-full aspect-video rounded-sm overflow-hidden flex items-center justify-center"
+                  style="background: linear-gradient(135deg, #ffd1dc, #ffb6cb)"
+                >
+                  <svg viewBox="0 0 120 80" class="" xmlns="http://www.w3.org/2000/svg">
+                    <image href="assets/images/WhatsApp Image 2026-06-16 at 19.44.29.jpeg" x="0" y="0" width="120" height="100" preserveAspectRatio="xMidYMid slice" />
+                  </svg>
+                </div>
+                <div class="absolute top-3 right-3">
+                  <span class="material-symbols-outlined sparkle-icon text-base"
+                    >auto_awesome</span
+                  >
+                </div>
+                <p class="caption">Where it all began ♡</p>
+              </div>
+              <div class="mt-3 pl-1">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="material-symbols-outlined text-primary text-lg"
+                    >favorite</span
+                  >
+                  <span class="font-headline font-bold text-primary"
+                    >06 November 2024</span
+                  >
+                </div>
+                <p
+                  class="font-body text-on-surface-variant text-sm leading-relaxed"
+                >
+                  The day everything changed. A nervous smile, a shared laugh —
+                  and somehow I knew you were the one I'd been waiting for.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 2 -->
+          <div
+            class="mb-16 md:flex md:justify-start md:pl-16 reveal"
+            style="transition-delay: 0.1s"
+          >
+            <div class="md:w-80">
+              <div
+                class="polaroid hover:scale-105 hover:rotate-0 rotate-1 transition-all duration-400 cursor-default"
+                style="background: linear-gradient(135deg, #f0f8ff, #e8f4ff)"
+              >
+                <div
+                  class="washi"
+                  style="
+                    background: rgba(180, 210, 255, 0.75);
+                    left: 40%;
+                    transform: translateX(-50%) rotate(3deg);
+                  "
+                ></div>
+                <div
+                  class="w-full aspect-video rounded-sm overflow-hidden flex items-center justify-center"
+                  style="background: linear-gradient(135deg, #e8f4ff, #c8e4ff)"
+                >
+                  <svg viewBox="0 0 120 80" class="">
+                        <image href="assets/images/WhatsApp%20Image%202026-06-16%20at%2019.44.28.jpeg" x="0" y="0" width="120" height="120" preserveAspectRatio="xMidYMid slice" />
+                      </svg>
+                </div>
+                <div class="absolute top-3 right-3">
+                  <span
+                    class="material-symbols-outlined sparkle-icon text-base"
+                    style="animation-delay: 0.4s"
+                    >auto_awesome</span
+                  >
+                </div>
+                <p class="caption">Stellar Beginnings 🌌</p>
+              </div>
+              <div class="mt-3 pl-1">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="material-symbols-outlined text-primary text-lg"
+                    >photo_camera</span
+                  >
+                  <span class="font-headline font-bold text-primary"
+                    >18 Januari 2025</span
+                  >
+                </div>
+                <p
+                  class="font-body text-on-surface-variant text-sm leading-relaxed"
+                >
+                  Milkyverse gave us our first shared adventure, where excitement, screams, and laughter became our sweetest memory.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 3 -->
+          <div
+            class="mb-16 md:flex md:justify-end md:pr-16 reveal"
+            style="transition-delay: 0.2s"
+          >
+            <div class="md:w-80">
+              <div
+                class="polaroid hover:scale-105 hover:rotate-0 -rotate-2 transition-all duration-400 cursor-default"
+                style="background: linear-gradient(135deg, #fff8f0, #ffeedd)"
+              >
+                <div
+                  class="washi"
+                  style="
+                    background: rgba(255, 220, 150, 0.75);
+                    transform: translateX(-50%) rotate(-2deg);
+                  "
+                ></div>
+                <div
+                  class="w-full aspect-video rounded-sm overflow-hidden flex items-center justify-center"
+                  style="background: linear-gradient(135deg, #ffeedd, #ffd4a0)"
+                >
+                  <svg viewBox="0 0 120 80" class="" xmlns="http://www.w3.org/2000/svg">
+                    <image href="assets/images/WhatsApp%20Image%202026-06-16%20at%2019.44.46.jpeg" x="0" y="0" width="120" height="80" preserveAspectRatio="xMidYMid slice" />
+                  </svg>
+                </div>
+                <div class="absolute top-3 right-3">
+                  <span
+                    class="material-symbols-outlined sparkle-icon text-base"
+                    style="animation-delay: 0.8s"
+                    >auto_awesome</span
+                  >
+                </div>
+                <p class="caption">Midnight Stroll 🌙</p>
+              </div>
+              <div class="mt-3 pl-1">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="material-symbols-outlined text-primary text-lg"
+                    >mail</span
+                  >
+                  <span class="font-headline font-bold text-primary"
+                    >01 Oktober 2025</span
+                  >
+                </div>
+                <p
+                  class="font-body text-on-surface-variant text-sm leading-relaxed"
+                >
+                  After dinner, walking beside you through quiet night sidewalks felt surprisingly comforting and enough.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 4 -->
+          <div
+            class="mb-8 md:flex md:justify-start md:pl-16 reveal"
+            style="transition-delay: 0.3s"
+          >
+            <div class="md:w-80">
+              <div
+                class="polaroid hover:scale-105 hover:rotate-0 rotate-2 transition-all duration-400 cursor-default"
+                style="background: linear-gradient(135deg, #fff5f0, #ffe8e0)"
+              >
+                <div
+                  class="washi"
+                  style="
+                    background: rgba(255, 170, 150, 0.7);
+                    left: 55%;
+                    transform: translateX(-50%) rotate(2deg);
+                  "
+                ></div>
+                <div
+                  class="w-full aspect-video rounded-sm overflow-hidden flex items-center justify-center"
+                  style="background: linear-gradient(135deg, #ffe0d0, #ffc8b0)"
+                >
+                  <svg viewBox="0 0 120 80" class="" xmlns="http://www.w3.org/2000/svg">
+                      <image href="assets/images/WhatsApp%20Image%202026-06-16%20at%2019.44.43.jpeg" x="0" y="0" width="120" height="100" preserveAspectRatio="xMidYMid slice" />
+                    </svg>
+                </div>
+                <div class="absolute top-3 right-3">
+                  <span
+                    class="material-symbols-outlined sparkle-icon text-base"
+                    style="animation-delay: 1.2s"
+                    >auto_awesome</span
+                  >
+                </div>
+                <p class="caption"> Ocean Keepsake 🌊</p>
+              </div>
+              <div class="mt-3 pl-1">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="material-symbols-outlined text-primary text-lg"
+                    >cake</span
+                  >
+                  <span class="font-headline font-bold text-primary"
+                    >25 Mei 2026</span
+                  >
+                </div>
+                <p
+                  class="font-body text-on-surface-variant text-sm leading-relaxed"
+                >
+                  Leaving the aquarium photobox with printed memories in hand, we realized ordinary nights could become our favorites.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add Memory Button -->
+        <div class="text-center reveal" style="transition-delay: 0.4s">
+          <button
+            onclick="handleAddMemory()"
+            class="btn-squishy inline-flex items-center gap-2 border-2 border-primary text-primary font-headline font-semibold px-6 py-3 rounded-full hover:bg-primary-container transition-colors"
+          >
+            <span class="material-symbols-outlined">add_circle</span>
+            Add a New Memory
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 3: LOVE LETTER ===== -->
+    <section
+      id="letter"
+      class="min-h-screen py-20 px-4 relative"
+      style="
+        background: linear-gradient(
+          160deg,
+          #fdf5f7 0%,
+          #fff8fa 50%,
+          #fef0f4 100%
+        );
+      "
+    >
+      <!-- Floating polaroid decoration -->
+      <div
+        class="hidden md:block absolute left-8 bottom-24 w-40 pointer-events-none"
+        style="
+          transform: rotate(-12deg);
+          transition: transform 0.4s ease;
+          z-index: 2;
+        "
+        onmouseenter="this.style.transform = 'rotate(-3deg)'"
+        onmouseleave="this.style.transform = 'rotate(-12deg)'"
+      >
+            <div class="polaroid">
+          <div
+            class="w-full aspect-square rounded-sm"
+            style="background: linear-gradient(135deg, #ffd1dc, #f5b8c8)"
+          >
+            <svg viewBox="0 0 80 80" class="w-full h-full">
+              <image href="assets/images/WhatsApp%20Image%202026-06-16%20at%2021.13.00.jpeg" x="0" y="0" width="80" height="80" preserveAspectRatio="xMidYMid slice" />
+            </svg>
+          </div>
+          <p class="caption text-sm">You & Me 💕</p>
+        </div>
+      </div>
+
+      <!-- Music player widget -->
+      <div
+        class="hidden md:flex absolute right-10 top-32 flex-col items-center gap-2 z-10"
+        style="transform: rotate(3deg); transition: transform 0.3s ease"
+        onmouseenter="this.style.transform = 'rotate(0deg)'"
+        onmouseleave="this.style.transform = 'rotate(3deg)'"
+      >
+        <div
+          class="glass rounded-2xl px-5 py-4 w-56 cursor-pointer"
+          onclick="toggleLetterMusic(this)"
+        >
+          <p class="font-headline text-xs font-bold text-primary mb-1">
+            Now Playing
+          </p>
+          <p class="font-body text-on-surface-variant text-xs mb-3 truncate">
+            About You 🎵
+          </p>
+          <div class="flex items-center gap-3">
+            <button
+              class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white letter-play-btn"
+            >
+              <span class="material-symbols-outlined text-base"
+                >play_arrow</span
+              >
+            </button>
+            <div class="music-bar" id="letter-music-bar">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-2xl mx-auto relative z-10">
+        <!-- Header -->
+        <div class="text-center mb-10 reveal">
+          <p class="font-handwritten text-primary-light text-2xl mb-1">
+            Chapter Three
+          </p>
+          <h2
+            class="font-headline font-extrabold text-4xl md:text-5xl text-primary"
+          >
+            A Letter for You
+          </h2>
+        </div>
+
+        <!-- Letter Card -->
+        <div
+          id="letter-card"
+          class="reveal letter-card bg-white rounded-2xl cursor-default"
+          style="
+            padding: 36px 32px;
+            border: 18px solid white;
+            transform: rotate(-1deg);
+            box-shadow:
+              0 20px 60px -10px rgba(120, 85, 94, 0.2),
+              0 4px 20px rgba(120, 85, 94, 0.1);
+          "
+          onmousemove="spawnSparkle(event)"
+        >
+          <p class="font-handwritten text-primary text-2xl mb-6">
+            To My Dearest...
+          </p>
+
+          <p class="font-body text-on-surface leading-relaxed mb-5">
+            CAYANGG AKUU MASI INGET BANGET AWAL KITA KETEMU. GAK NYANGKA BISA SECEPET INI DEKET, SECEPET INI SAYANG. DARI OBROLAN PERTAMA YANG CUMA BISA NGOMONGIN HAL RINGAN SAMPE SEKARANG YANG UDAH BISA NGOMONGIN HAL DALAM, DARI KETEMU DI KAMPUS SAMPE KETEMU DI HATI. SETIAP MOMEN BERSAMAMU ITU SPESIAL, DAN AKU GAK PERNAH MAU LEWATIN SATU DETIK PUN TANPA CAYANGG DI SAMPINGKU.
+          </p>
+
+          <p class="font-body text-on-surface leading-relaxed mb-5">
+            AKU TAUU PERJALANAN KITA SAMPE TITIK INI TIDAA MUDAH CAYANGG, BENER BENER BANYAK BANGET RINTANGANNYA, KERIKILNYA, BADAINYA, SEMUA MUANYA YANG BERUSAHA MENJATUHKAN MENTAL KITA, TAPI KITA MEMILIH UNTUK KUAT. PERJALANAN SAMA CAYANG INII NGEBUAT AKU BELAJAR BANYAK HAL, DARI GIMANA CARANYA NGONTROL DIRI, KOMITMENT, SAMPE GIMANA CARANYA MENERIMA KEKURANGAN DAN KELEBIHAN PASANGAN DAN MENERIMA KEKURANGAN DIRI SENDIRI. DAN ITU KITA BELAJAR BERSAMA, TUMBUH BERSAMA, DAN ITU YANG PALING BERARTI BUAT AKU CAYANGGG.
+          </p>
+
+          <blockquote
+            class="border-l-4 border-primary-container pl-5 my-7 italic"
+          >
+            <p class="font-body text-on-surface-variant leading-relaxed">
+              "Sejauh apa pun saya melangkah, tetap kau yang menjadi ujungnya."
+            </p>
+            <footer class="font-handwritten text-primary mt-2 not-italic">
+              — Raim Laode
+            </footer>
+          </blockquote>
+
+          <p class="font-body text-on-surface leading-relaxed mb-5">
+            CAYANGG NGEBUAT AKUU MAW HIDUP LEBIH LAMAA. CAYANG ITUU NGEBUAT HARIKU YANG BIASA AJA TERASA BERARTI DAN SPESIAL. CAYANGG ITUU ORANG FAVORITKU DAN ORANG YANG PALING AKU SAYANGG DI ALAM SEMESTA INI, ORANG YANG BIKIN AKU NGERASA AMAN DAN NYAMAN, ORANG YANG BIKIN AKU NGERASA PULANG KETIKA ADA DI DEKATNYA CAYANGG.
+          </p>
+
+          <p class="font-body text-on-surface leading-relaxed mb-8">
+            DANN HERE WE ARE, KITA BERADA DI HARI YANG SANGAT SANGAT SPESIAL, HARI ANNIV KITA YANG KE 1 TAHUN 8 BULAN CAYANGG. CERITA INI AKAN TERUS BERLANJUT TERUS DAN YANG AKAN MENULIS CERITA INI ADALAH KITA BERDUA CAYANGGG 🌸
+          </p>
+
+          <!-- Signature -->
+          <div class="flex items-end justify-between">
+            <div>
+              <p class="font-handwritten text-primary text-2xl">
+                With all my love,
+              </p>
+              <p
+                class="font-handwritten text-primary-dark text-3xl font-bold mt-1"
+              >
+                Yours Forever 💕
+              </p>
+            </div>
+            <!-- Envelope sticker -->
+            <div
+              class="w-16 h-16 flex items-center justify-center"
+              style="animation: sparkleRotate 3s ease-in-out infinite"
+            >
+              <svg viewBox="0 0 60 60" class="w-full h-full">
+                <rect
+                  x="5"
+                  y="12"
+                  width="50"
+                  height="36"
+                  rx="4"
+                  fill="#ffd1dc"
+                />
+                <path
+                  d="M5 14 L30 32 L55 14"
+                  stroke="#e87da0"
+                  stroke-width="2"
+                  fill="none"
+                />
+                <path
+                  d="M5 48 L20 34"
+                  stroke="#e87da0"
+                  stroke-width="1.5"
+                  fill="none"
+                />
+                <path
+                  d="M55 48 L40 34"
+                  stroke="#e87da0"
+                  stroke-width="1.5"
+                  fill="none"
+                />
+                <circle cx="30" cy="32" r="5" fill="#e87da0" />
+                <text x="27" y="35" font-size="6" fill="white">♥</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION 4: SCRAPBOOK ===== -->
+    <section id="scrapbook" class="min-h-screen py-20 px-4 relative">
+      <!-- Scrapbook bg -->
+      <div
+        class="absolute inset-0 -z-10"
+        style="
+          background:
+            radial-gradient(
+              ellipse at 15% 25%,
+              rgba(255, 209, 220, 0.3) 0%,
+              transparent 50%
+            ),
+            radial-gradient(
+              ellipse at 85% 75%,
+              rgba(245, 200, 215, 0.25) 0%,
+              transparent 50%
+            ),
+            linear-gradient(135deg, #fdf8f5 0%, #faf2f5 50%, #fff4f8 100%);
+          background-attachment: fixed;
+        "
+      ></div>
+
+      <!-- Floating decor -->
+      <div
+        class="absolute top-16 right-8 pointer-events-none opacity-10 text-primary"
+        aria-hidden="true"
+      >
+        <span class="material-symbols-outlined" style="font-size: 6rem"
+          >local_florist</span
+        >
+      </div>
+      <div
+        class="absolute bottom-20 left-6 pointer-events-none opacity-10 text-primary"
+        aria-hidden="true"
+      >
+        <span class="material-symbols-outlined" style="font-size: 5rem"
+          >eco</span
+        >
+      </div>
+
+      <div class="max-w-5xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-12 reveal">
+          <p class="font-handwritten text-primary-light text-2xl mb-1">
+            Chapter Four
+          </p>
+          <h2
+            class="font-headline font-extrabold text-4xl md:text-5xl text-primary"
+          >
+            Our Scrapbook
+          </h2>
+          <p class="font-body text-on-surface-variant mt-2">
+            Little snapshots of us 📸
+          </p>
+        </div>
+
+        <!-- Bento Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-5 mb-8">
+          <!-- Big polaroid — col-span-7 -->
+          <div class="md:col-span-7 reveal">
+            <div
+              class="polaroid hover:scale-105 hover:rotate-0 -rotate-1 transition-all duration-400 cursor-pointer"
+              style="box-shadow: 0 12px 40px -8px rgba(120, 85, 94, 0.22)"
+            >
+              <div
+                class="washi"
+                style="background: rgba(255, 200, 180, 0.8); width: 90px"
+              ></div>
+              <div
+                class="w-full rounded-sm overflow-hidden"
+                style="
+                  height: 280px;
+                  background: linear-gradient(
+                    135deg,
+                    #ffd1dc 0%,
+                    #f0b8c8 30%,
+                    #e8a0b5 60%,
+                    #d890a5 100%
+                  );
+                "
+              >
+                <svg viewBox="0 0 500 280" class="">
+                  <image href="assets/images/WhatsApp%20Image%202026-06-16%20at%2021.55.22%20%283%29.jpeg" x="0" y="0" width="500" height="280" preserveAspectRatio="xMidYMid slice" />
+                </svg>
+              </div>
+              <p class="caption text-lg">Golden hour, just us two 🌅</p>
+            </div>
+          </div>
+
+          <!-- Right column — col-span-5 -->
+          <div
+            class="md:col-span-5 flex flex-col gap-5 reveal"
+            style="transition-delay: 0.1s"
+          >
+            <!-- Sticky note -->
+            <div
+              class="rounded-2xl p-5 relative"
+              style="
+                background: linear-gradient(135deg, #d4f0c8, #c8e8b8);
+                box-shadow: 0 4px 20px rgba(100, 150, 80, 0.15);
+                transform: rotate(1deg);
+              "
+            >
+              <div
+                class="absolute -top-3 left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-white opacity-60 shadow-sm"
+              ></div>
+              <p
+                class="font-handwritten text-green-800 text-xl leading-relaxed"
+              >
+                "No matter where life takes us, I'll always choose you first.
+                Always." 🍃
+              </p>
+              <p class="font-handwritten text-green-600 text-base mt-3">
+                — kamu, selamanya
+              </p>
+            </div>
+
+            <!-- Small polaroid -->
+            <div
+              class="polaroid hover:scale-105 hover:rotate-0 rotate-3 transition-all duration-400 cursor-pointer self-center w-48"
+              style="box-shadow: 0 8px 24px rgba(120, 85, 94, 0.18)"
+            >
+              <div
+                class="washi"
+                style="background: rgba(200, 180, 255, 0.8); width: 60px"
+              ></div>
+              <div
+                class="w-full aspect-square rounded-sm overflow-hidden flex items-center justify-center"
+                style="background: linear-gradient(135deg, #e8deff, #d4c8ff)"
+              >
+                <svg viewBox="0 0 80 80" class="w-full h-full">
+                  <image href="assets/images/WhatsApp%20Image%202026-06-16%20at%2021.55.22.jpeg" x="0" y="0" width="80" height="80" preserveAspectRatio="xMidYMid slice" />
+                </svg>
+              </div>
+              <p class="caption text-sm">You 💞</p>
+            </div>
+          </div>
+
+          <!-- Bottom row: portrait + quote -->
+          <div class="md:col-span-4 reveal" style="transition-delay: 0.2s">
+            <div
+              class="polaroid hover:scale-105 hover:rotate-0 -rotate-2 transition-all duration-400 cursor-pointer h-full"
+              style="box-shadow: 0 8px 28px rgba(120, 85, 94, 0.18)"
+            >
+              <div
+                class="washi"
+                style="
+                  background: rgba(255, 240, 120, 0.8);
+                  left: 35%;
+                  width: 80px;
+                "
+              ></div>
+              <div
+                class="w-full rounded-sm overflow-hidden"
+                style="
+                  min-height: 200px;
+                  background: linear-gradient(180deg, #ffeaa0, #ffd460);
+                "
+              >
+                <svg viewBox="0 0 160 200" class="w-full h-full">
+                  <image href="assets/images/WhatsApp%20Image%202026-06-16%20at%2021.55.22%20%282%29.jpeg" x="0" y="0" width="160" height="200" preserveAspectRatio="xMidYMid slice" />
+                </svg>
+              </div>
+              <p class="caption">Every moment with you 😊</p>
+            </div>
+          </div>
+
+          <div
+            class="md:col-span-8 flex items-center justify-center reveal"
+            style="transition-delay: 0.3s"
+          >
+            <div class="p-6 text-center">
+              <p
+                class="font-handwritten text-primary text-3xl md:text-4xl leading-relaxed italic"
+              >
+                "I love you. I love you in every universe."
+              </p>
+              <p class="font-body text-on-surface-variant text-sm mt-4">
+                — Doctor Strange
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chip stickers -->
+        <div
+          class="flex flex-wrap justify-center gap-3 reveal"
+          style="transition-delay: 0.4s"
+        >
+          <span
+            class="glass rounded-full px-4 py-2 font-body text-sm font-semibold text-primary btn-squishy cursor-default"
+            >First Date 💖</span
+          >
+          <span
+            class="glass rounded-full px-4 py-2 font-body text-sm font-semibold text-primary btn-squishy cursor-default"
+            >Anniversary ✨</span
+          >
+          <span
+            class="glass rounded-full px-4 py-2 font-body text-sm font-semibold text-primary btn-squishy cursor-default"
+            >Beach Trip 🌊</span
+          >
+          <span
+            class="glass rounded-full px-4 py-2 font-body text-sm font-semibold text-primary btn-squishy cursor-default"
+            >Home Sweet Home 🏠</span
+          >
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center mt-16 reveal" style="transition-delay: 0.5s">
+          <p class="font-handwritten text-primary text-2xl">
+            Made with love, just for you 💕
+          </p>
+          <p class="font-body text-on-surface-variant text-sm mt-2">
+            © Our Love Story · 17 Oktober 2024 — Forever
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MOBILE BOTTOM NAV ===== -->
+    <nav id="bottom-nav" class="md:hidden">
+      <div class="flex">
+        <a
+          href="#home"
+          class="bottom-tab flex-1 flex flex-col items-center py-3 text-on-surface-variant hover:text-primary transition-colors"
+          data-section="home"
+        >
+          <span class="material-symbols-outlined text-xl">home</span>
+          <span class="text-xs font-semibold mt-0.5">Home</span>
+        </a>
+        <a
+          href="#timeline"
+          class="bottom-tab flex-1 flex flex-col items-center py-3 text-on-surface-variant hover:text-primary transition-colors"
+          data-section="timeline"
+        >
+          <span class="material-symbols-outlined text-xl">auto_stories</span>
+          <span class="text-xs font-semibold mt-0.5">Story</span>
+        </a>
+        <a
+          href="#letter"
+          class="bottom-tab flex-1 flex flex-col items-center py-3 text-on-surface-variant hover:text-primary transition-colors"
+          data-section="letter"
+        >
+          <span class="material-symbols-outlined text-xl">mail</span>
+          <span class="text-xs font-semibold mt-0.5">Letter</span>
+        </a>
+        <a
+          href="#scrapbook"
+          class="bottom-tab flex-1 flex flex-col items-center py-3 text-on-surface-variant hover:text-primary transition-colors"
+          data-section="scrapbook"
+        >
+          <span class="material-symbols-outlined text-xl">photo_library</span>
+          <span class="text-xs font-semibold mt-0.5">Gallery</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- ===== FLOATING LOVE NOTE ===== -->
+    <div id="love-note-widget">
+      <!-- Popup -->
+      <div
+        id="love-note-popup"
+        class="absolute bottom-16 right-0 w-64 glass rounded-2xl p-4 shadow-xl mb-2"
+        aria-hidden="true"
+      >
+        <p class="font-handwritten text-primary text-lg mb-2">
+          💌 A little reminder
+        </p>
+        <p class="font-body text-on-surface-variant text-sm leading-relaxed">
+          Hey you. Yes, you. Just wanted to say: you are so loved. More than
+          words can hold. 🌸
+        </p>
+        <div class="mt-3 flex justify-end">
+          <button
+            onclick="closeLoveNote()"
+            class="text-xs font-semibold text-primary hover:text-primary-dark transition-colors"
+          >
+            close ✕
+          </button>
+        </div>
+      </div>
+      <!-- Trigger button -->
+      <button
+        onclick="toggleLoveNote()"
+        class="love-note-btn w-14 h-14 rounded-full bg-primary text-white shadow-card flex items-center justify-center btn-squishy"
+        aria-label="Open love note"
+      >
+        <span class="material-symbols-outlined text-2xl">favorite</span>
+      </button>
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <!-- Background music (auto-play: muted initially, unmute on first gesture) -->
+    <audio id="bg-music" src="music/The%201975%20-%20About%20You%20%28Official%29.mp3" preload="auto" loop muted></audio>
+    <script>
+      // Unmute & play on first user gesture (click/tap) so browsers allow autoplay
+      (function () {
+        const bg = document.getElementById("bg-music");
+        if (!bg) return;
+        bg.volume = 0.65;
+        bg.play().catch(() => {});
+        const enable = () => {
+          try {
+            bg.muted = false;
+            bg.play().catch(() => {});
+          } finally {
+            window.removeEventListener("pointerdown", enable);
+            window.removeEventListener("touchstart", enable);
+          }
+        };
+        window.addEventListener("pointerdown", enable, { passive: true });
+        window.addEventListener("touchstart", enable, { passive: true });
+      })();
+
+      // ── Count-up timer from 14 Oct 2022 ──
+      const anniversary = new Date("2022-10-14T00:00:00");
+
+      function updateCountup() {
+        const now = new Date();
+        const diff = now - anniversary;
+        const totalSecs = Math.floor(diff / 1000);
+        const secs = totalSecs % 60;
+        const mins = Math.floor(totalSecs / 60) % 60;
+        const hours = Math.floor(totalSecs / 3600) % 24;
+        const days = Math.floor(totalSecs / 86400);
+        document.getElementById("cd-days").textContent = days.toLocaleString();
+        document.getElementById("cd-hours").textContent = String(
+          hours,
+        ).padStart(2, "0");
+        document.getElementById("cd-mins").textContent = String(mins).padStart(
+          2,
+          "0",
+        );
+        document.getElementById("cd-secs").textContent = String(secs).padStart(
+          2,
+          "0",
+        );
+
+        // Also update days counter in timeline header
+        const dayEl = document.getElementById("days-counter");
+        if (dayEl) dayEl.textContent = days.toLocaleString();
+      }
+      updateCountup();
+      setInterval(updateCountup, 1000);
+
+      // ── Floating hearts ──
+      const heartContainer = document.getElementById("hearts-container");
+      const heartSymbols = ["♥", "♡", "❤", "💕", "💗"];
+
+      function spawnHeart() {
+        const el = document.createElement("span");
+        el.classList.add("heart-float");
+        el.textContent =
+          heartSymbols[Math.floor(Math.random() * heartSymbols.length)];
+        el.style.left = Math.random() * 100 + "vw";
+        const dur = 5 + Math.random() * 5;
+        el.style.animationDuration = dur + "s";
+        el.style.fontSize = 0.9 + Math.random() * 1.2 + "rem";
+        el.style.opacity = 0.3 + Math.random() * 0.5;
+        heartContainer.appendChild(el);
+        setTimeout(() => el.remove(), dur * 1000);
+      }
+      setInterval(spawnHeart, 800);
+
+      // ── Navbar scroll effect ──
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        navbar.classList.toggle("scrolled", window.scrollY > 20);
+      });
+
+      // ── Intersection Observer for reveal ──
+      const revealEls = document.querySelectorAll(".reveal");
+      const revealObs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.12 },
+      );
+      revealEls.forEach((el) => revealObs.observe(el));
+
+      // ── Active nav on scroll ──
+      const sections = ["home", "timeline", "letter", "scrapbook"];
+      const navLinks = document.querySelectorAll(".nav-link");
+      const bottomTabs = document.querySelectorAll(".bottom-tab");
+
+      const sectionObs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              const id = e.target.id;
+              navLinks.forEach((l) =>
+                l.classList.toggle("active", l.dataset.section === id),
+              );
+              bottomTabs.forEach((t) =>
+                t.classList.toggle("active", t.dataset.section === id),
+              );
+            }
+          });
+        },
+        { threshold: 0.4 },
+      );
+      sections.forEach((id) => {
+        const el = document.getElementById(id);
+        if (el) sectionObs.observe(el);
+      });
+
+      // ── Love note widget ──
+      const popup = document.getElementById("love-note-popup");
+      function toggleLoveNote() {
+        popup.classList.toggle("open");
+        popup.setAttribute(
+          "aria-hidden",
+          popup.classList.contains("open") ? "false" : "true",
+        );
+      }
+      function closeLoveNote() {
+        popup.classList.remove("open");
+        popup.setAttribute("aria-hidden", "true");
+      }
+      // Close when clicking outside
+      document.addEventListener("click", (e) => {
+        const widget = document.getElementById("love-note-widget");
+        if (!widget.contains(e.target)) closeLoveNote();
+      });
+
+      // ── Letter music player toggle ──
+      let letterMusicPlaying = false;
+      function toggleLetterMusic(container) {
+        letterMusicPlaying = !letterMusicPlaying;
+        const bar = document.getElementById("letter-music-bar");
+        const btn = container.querySelector(".letter-play-btn span");
+        if (letterMusicPlaying) {
+          bar.classList.remove("paused");
+          btn.textContent = "pause";
+        } else {
+          bar.classList.add("paused");
+          btn.textContent = "play_arrow";
+        }
+      }
+
+      // ── Sparkle on letter hover ──
+      let sparkleTimeout;
+      function spawnSparkle(e) {
+        if (sparkleTimeout) return;
+        sparkleTimeout = setTimeout(() => {
+          sparkleTimeout = null;
+        }, 120);
+
+        const symbols = ["✨", "💕", "⭐", "✦", "🌸"];
+        const el = document.createElement("div");
+        el.classList.add("sparkle-dot");
+        el.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+        el.style.left = e.clientX + (Math.random() * 30 - 15) + "px";
+        el.style.top = e.clientY + (Math.random() * 30 - 15) + "px";
+        document.body.appendChild(el);
+        setTimeout(() => el.remove(), 800);
+      }
+
+      // ── Add memory button ──
+      function handleAddMemory() {
+        const btn = event.currentTarget;
+        const orig = btn.innerHTML;
+        btn.innerHTML =
+          '<span class="material-symbols-outlined">check_circle</span> Memory saved! 💕';
+        btn.disabled = true;
+        setTimeout(() => {
+          btn.innerHTML = orig;
+          btn.disabled = false;
+        }, 2000);
+      }
+
+      // ── Parallax for floating decors ──
+      window.addEventListener("scroll", () => {
+        const scrollY = window.scrollY;
+        document.querySelectorAll(".float-decor").forEach((el, i) => {
+          el.style.transform = `translateY(${scrollY * (i % 2 === 0 ? 0.08 : -0.06)}px)`;
+        });
+      });
+    </script>
+  </body>
+</html>
